@@ -2,7 +2,7 @@
 
 [Iris](https://iris.to/) is a Nostr Android, iOS and web client for better social networks.
 
-Please note that this FAQ section is a work in progress. The information may have already changed due to the frequent app and network updates.
+Please note that this FAQ section is a work-in-progress. The information may have already changed due to the frequent app and network updates.
 
 If you cannot find the answer to your question, you can always reach out to other Iris and Nostr users for assistance. 
 
