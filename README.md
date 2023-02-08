@@ -28,6 +28,12 @@ Supports npub and window.nostr login as well as Alby and nos2x browser extension
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
 
+### Username
+Iris supports URLs in the following formats: 
+ - https://iris.to/bob (bob is an iris.to/username, not publicly available yet)
+ - https://iris.to/alice@example.com (if you have a NIP05; not your email)
+ - https://iris.to/example.com (if you have a NIP05 _@example.com)
+
 ### Browser version
 
 Iris works on most common browsers: [iris.to](https://iris.to/). 
