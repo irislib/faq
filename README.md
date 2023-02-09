@@ -160,7 +160,7 @@ The relays Iris uses can change over time since they reflect the content you're 
 Iris asks for 1000 latest events from known users initially. Some relays don't like the large authors filter (100-2000). Then it subscribes to all upcoming messages but discards those that are from unknown authors. When you open someone's profile, all their events are queried.
 
 ### Umbrel
-Iris may not work with ws: but only with wss: (using webcrypto api). Browsers don't let you connect to a non-secure address (ws) if the page is loaded from a secure origin (https) 
+Iris may not work with ws: but only with wss: (using webcrypto api). Browsers don't let you connect to a non-secure address (ws) if the page is loaded from a secure origin (https).
 
 ### Timestamps
 Iris saves the notifications and DM threads' last seen timestamp for easier client synchronisation.
