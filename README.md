@@ -33,6 +33,9 @@ Iris supports URLs in the following formats:
  - https://iris.to/bob (bob is an iris.to/username, not publicly available yet)
  - https://iris.to/alice@example.com (if you have a NIP05; not your email)
  - https://iris.to/example.com (if you have a NIP05 _@example.com)
+ - https://iristo/npub (nostr public key)
+ 
+The username that you can change in "edit profile" is not unique. However, nip05 names such as alice@example.com are unique. 
 
 ### Browser version
 
@@ -62,7 +65,7 @@ Block lists are stored encrypted to self in event kind 16462.
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
 ### Feed and spam
-Iris rejects content from unknown users and that helps to filter out a lot of the spam.
+Iris rejects events from authors that your social network has not interacted with. The downside is that discovery of new users is more difficult, and sometimes you see less posts than on other clients.
 
 ### Flag (public)
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
@@ -76,8 +79,10 @@ You can post image URLs and the media is shown in the notes.
 ### Global feed
 Global feed shows notes from everyone in your extended network of follows.
 
-### Embedded video formats
-Youtube videos are played directly on notes.
+### Embedded media formats
+Youtube, IG, Tidal and Spotify play on notes.
+
+Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM BS extension.
 
 ### Likes
 Click the number next to the heart in a note to see who liked it.
@@ -87,6 +92,9 @@ If a user's name is not found, a deterministic Adjective Animal name is shown in
 
 ### Log in with the public key
 If you use a public key to log in you have a read-only view of certain information but cannot add, edit or delete information.
+
+### Notes
+There's no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
 
 ### Markdown
 This is not supported yet.
@@ -105,6 +113,9 @@ Video and audio uploads are supported on notes.
 
 ### Report notes
 You can publicly report users' posts. It publishes a delete event for the reported note in Nostr.
+
+### Undo and delete
+In the note menu, there’s a delete option for notes. It’s up to relays and other clients to respect it so consider it more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works. Unboosting and unliking work the same way (not available yet).
 
 ### Webtorrent magnet links
 Notes preview and play Magnet webtorrent media links (may not work on mobile devices).
@@ -148,8 +159,11 @@ The relays Iris uses can change over time since they reflect the content you're 
 ### Relay requests
 Iris asks for 1000 latest events from known users initially. Some relays don't like the large authors filter (100-2000). Then it subscribes to all upcoming messages but discards those that are from unknown authors. When you open someone's profile, all their events are queried.
 
+### Umbrel
+Iris may not work with ws: but only with wss: (using webcrypto api). Browsers don't let you connect to a non-secure address (ws) if the page is loaded from a secure origin (https) 
+
 ### Timestamps
-Iris saves the notifications and DM threads last seen timestamp for easier client synchronisation.
+Iris saves the notifications and DM threads' last seen timestamp for easier client synchronisation.
 
 ### What is NIP-5
 The NIP05 address is just an easier way to find your public key profile. Just like email addresses, many people can have the same NIP05 username (e.g. Bob), but not on the same domain (e.g. bob@domain.com).
@@ -157,7 +171,7 @@ The NIP05 address is just an easier way to find your public key profile. Just li
 ## Questions and support
 
 ### Iris developer
-[Martti Malmi](https://iris.to/#/profile/npub1g53mukxnjkcmr94fhryzkqutdz2ukq4ks0gvy5af25rgmwsl4ngq43drvk) develops Iris full-time.
+[Martti Malmi](https://iris.to/npub1g53mukxnjkcmr94fhryzkqutdz2ukq4ks0gvy5af25rgmwsl4ngq43drvk) develops Iris full-time.
 
 ### Iris name
 Iris is the Greek goddess of the rainbow and the messenger of gods. Iris means rainbow in ancient Greek. The iris of the eye is named so because of its many colors. Eyes are essential for human communication. Iris users could be called [iridians](https://en.wiktionary.org/wiki/iridian).
