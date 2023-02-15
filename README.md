@@ -11,7 +11,7 @@ There is a growing number of Nostr resources that may also instruct in using Iri
 ## Getting started
 
 ### Alby support
-Iris web client works with the [Alby](https://www.getalby.com) extension.
+Iris web client works with the [Alby](https://www.getalby.com) extension. According to Alby, also with multiple keys.
 
 ### Avatar
 Gif avatars work on Iris.
@@ -23,7 +23,7 @@ Gif avatars work on Iris.
 You can change the theme on settings. Iris will remember your selection even on other clients.
 
 ### Login options
-Supports npub and window.nostr login as well as Alby and nos2x browser extensions.
+Supports npub and window.nostr login as well as Alby and nos2x browser extensions. You can also paste your public key (npub) if you don't want to make any changes (e.g. follow, write notes, like, read DMs etc.).
 
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
@@ -65,7 +65,7 @@ Block lists are stored encrypted to self in event kind 16462.
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
 ### Feed and spam
-Iris rejects events from authors that your social network has not interacted with. The downside is that discovery of new users is more difficult, and sometimes you see less posts than on other clients.
+Iris rejects events from authors that your social network has not interacted with. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
 
 ### Flag (public)
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
@@ -94,7 +94,11 @@ If a user's name is not found, a deterministic Adjective Animal name is shown in
 If you use a public key to log in you have a read-only view of certain information but cannot add, edit or delete information.
 
 ### Notes
-There's no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
+There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
+
+For a quote note (you can also have more than one), copy the NoteID (from the note menu) and paste it on the new note into the position where you want the quoted note.
+
+Mentioning users When writing a note, type @ and wait for the menu to come out and choose the preferred user by clicking it from the menu.
 
 ### Markdown
 This is not supported yet.
@@ -123,10 +127,18 @@ Notes preview and play Magnet webtorrent media links (may not work on mobile dev
 ## Lightning
 
 ### Lightning address
-`lightning:iris@getalby.com` format is supported.
+`lightning:iris@getalby.com` format is supported. Add your lightning wallet in the edit profile section.
 
 ### Receiving lightning
 Issue a Lightning invoice or you can also use `lightning:iris@getalby.com` format.
+
+### Zapping
+Your mobile wallet needs to be registered on the device for the link to be recognised when you click it.
+
+Lightning wallets are starting to implement the zapping feature. You could try
+www.walletofsatoshi.com for mobile or https://getalby.com for desktop, for example.
+
+Currently, The ⚡️ is a lightning: link to the user's address. There is no listing of zaps yet. 
 
 ## Privacy and security
 
@@ -144,6 +156,10 @@ Only the message content is encrypted: sender, recipient and timestamp are visib
 ### Caching
 Iris caches profiles, follows and the latest 1000 notes for a faster and better user experience.
 
+### Features disappeared or missing?
+
+If you force refresh on your browser that might help (cmd/ctrl +R in some browsers) or quitting the app may also help clear the local cache ([iOS](https://support.apple.com/en-us/HT201330)).
+
 ### Keyword search
 Keyword search works with relays that have implemented it.
 
@@ -151,7 +167,9 @@ Keyword search works with relays that have implemented it.
 Iris stores a few of the latest messages, contacts and metadata, but could store more in the future.
 
 ### NIP05 verification failed
-If your NIP05 is not showing check whether you have technical errors in the NIP05 implementation (e.g. CORS error)
+If your NIP05 is not showing check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
+
+if your NIP05 shows as valid on one client, but invalid on the other it could be a local cache issue. Try cmd/cntr + R to do a force refresh on the browser, or quit and restart the app.
 
 ### Relays
 The relays Iris uses can change over time since they reflect the content you're viewing.
