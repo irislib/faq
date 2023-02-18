@@ -99,7 +99,7 @@ This is not supported yet.
 ### Notes
 There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
 
-For a quote note (you can also have more than one), copy the NoteID (from the note menu) and paste it on the new note into the position where you want the quoted note.
+For a [quote note](https://iris.to/post/note10ekxar0vvwnt6l098eemfypv3ty0ehtf47lfd8ljz9fv9tvz23psggdn00) (you can also have more than one), copy the NoteID (from the note menu) and paste it on the new note into the position where you want the quoted note.
 
 Mentioning users When writing a note, type @ and wait for the menu to come out and choose the preferred user by clicking it from the menu.
 
