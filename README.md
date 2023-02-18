@@ -11,10 +11,10 @@ There is a growing number of Nostr resources that may also instruct in using Iri
 ## Getting started
 
 ### Alby support
-Iris web client works with the [Alby](https://www.getalby.com) extension. According to Alby, also with multiple keys.
+Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension. According to Alby, also with multiple keys.
 
 ### Avatar
-Gif avatars work on Iris.
+Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgut84z5epwhnhh23d6sfkyjvm) on Iris.
 
 ### Profile banner size
 1500x500 pixels is the preferred size. 
@@ -93,6 +93,9 @@ If a user's name is not found, a deterministic Adjective Animal name is shown in
 ### Log in with the public key
 If you use a public key to log in you have a read-only view of certain information but cannot add, edit or delete information.
 
+### Markdown
+This is not supported yet.
+
 ### Notes
 There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
 
@@ -100,14 +103,26 @@ For a quote note (you can also have more than one), copy the NoteID (from the no
 
 Mentioning users When writing a note, type @ and wait for the menu to come out and choose the preferred user by clicking it from the menu.
 
-### Markdown
-This is not supported yet.
+Posting notes [works](https://iris.to/post/note1e8znafpc9sxgq447t6llsc0thp3eh80mh5zy6g6wqhygu8pf8ggq6maj9q) also by pressing cmd/ctrl + return on your keyboard.
 
 ### New follower notifications
 Iris shows notifications for new followers but doesn't save the notification yet. The notification is only shown when Iris has locally cached someone's contact list and gets a new version of it (updates were made elsewhere).
 
+### Notifications
+
+Iris shows [notifications](https://iris.to/post/note1esk3s2mkjmtxmew83407ywxt68yg0dcel4vu9knv3u450p86akwsgf2dwk) in one place (the ❤️ on the menu).
+
 ### Search notes
-You can paste note ids (bech32, beginning with “note”) into the search box to find them.
+
+You can [search](https://iris.to/post/note1gd35qpaj2tke6ku8rjf4mtnjuafk4y5ghmrvspfse0s2a3stlrcqs5yn95) users by
+⚡️ npub
+⚡️ NIP05 (jack@cash.app)
+⚡️ @ (and start typing the name)
+
+Notes by the NoteID (starting with note1)
+⚡️ with hashtags and keywords
+
+There's also [support](https://iris.to/post/note1hr7ye9vud7g0jxe3mma0j75gamusrzwhtejth5erqm9v9h5u9j7q3lawa8) for Chinese, Japanese and Korean languages.
 
 ### Upload images
 You can use the attach media option when writing a note, or upload to [imgur](https://imgur.com/upload), [nostr.build](https://www.nostr.build/) or a similar service and then insert the link to the note.
@@ -121,24 +136,28 @@ You can publicly report users' posts. It publishes a delete event for the report
 ### Undo and delete
 In the note menu, there’s a delete option for notes. It’s up to relays and other clients to respect it so consider it more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works. Unboosting and unliking work the same way (not available yet).
 
+## View as
+
+Iris allows you to view other accounts with their public key (a nostr protocol feature) if you're using a browser extension login. Visit the user's profile and open the user's profile menu and select the "[View as...](https://iris.to/post/note19nlkcm50kv4jfujhnprrgwa0m07s0wj7gqh663pu87sfgytgs6jqu32st4)" option.
+
 ### Webtorrent magnet links
 Notes preview and play Magnet webtorrent media links (may not work on mobile devices).
 
 ## Lightning
 
 ### Lightning address
-`lightning:iris@getalby.com` format is supported. Add your lightning wallet in the edit profile section.
+`lightning:iristoapp@getalby.com` format is supported. Add your lightning wallet in the edit profile section.
 
 ### Receiving lightning
-Issue a Lightning invoice or you can also use `lightning:iris@getalby.com` format.
+Issue a Lightning invoice or you can also use `lightning:iristoapp@getalby.com`format.
 
 ### Zapping
 Your mobile wallet needs to be registered on the device for the link to be recognised when you click it.
 
 Lightning wallets are starting to implement the zapping feature. You could try
-www.walletofsatoshi.com for mobile or https://getalby.com for desktop, for example.
+www.walletofsatoshi.com for mobile or https://getalby.com for desktop, for example. The technical term is [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md).
 
-Currently, The ⚡️ is a lightning: link to the user's address. There is no listing of zaps yet. 
+Currently, The ⚡️ is a lightning: link to the user's address ([see how it works](https://iris.to/post/note10uvvg0drlevur3y3cy6xgncwyg7ww28222yrkpfjy6kcc9w9d72qjnn5qp)). There is no listing of zaps yet. 
 
 ## Privacy and security
 
