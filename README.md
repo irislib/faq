@@ -28,14 +28,26 @@ Supports npub and window.nostr login as well as Alby and nos2x browser extension
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
 
-### Username
+### Username (nostr)
 Iris supports profile URLs in the following formats ([examples](https://iris.to/post/note1wn6axvzvnzn8hr45j95qlxpag4u7xcdx79rtk0uet8s5hhqynfhsdfppve)): 
- - https://iris.to/bob (bob is an iris.to/username, not publicly available yet)
- - https://iris.to/alice@example.com (if you have a NIP05; not your email)
- - https://iris.to/example.com (if you have a NIP05 _@example.com)
- - https://iristo/npub (nostr public key)
+ - `https://iris.to/bob` (bob is an `iris.to/username`)
+ - `https://iris.to/alice@example.com` (if you have a NIP05; not your email)
+ - `https://iris.to/example.com` (if you have a NIP05 _@example.com)
+ - `https://iristo/npub` (nostr public key)
  
-The username that you can change in "edit profile" is not unique. However, nip05 names such as alice@example.com are unique. 
+The username that you can change in "edit profile" is not unique. However, NIP05 identifiers such as `alice@example.com` are unique. 
+
+### Iris username
+
+Iris username helps users to find your nostr profile easier.
+
+The format is `iris.to/username` (for example: [iris.to/sirius](https://iris.to/sirius)).
+
+You can also use `username@iris.to` format (NIP05; e.g. `sirius@iris.to`) in user searches.
+
+You cannot change your Iris username. They are unique, more than 3 characters long and using letters and numbers only. You can use underscore (\_) but no other special characters are allowed.
+
+Namesquatting, impersonation, vulgar or otherwise offensive usernames may result in you losing your username (also spamming or otherwise abusive username usage).
 
 ### Browser version
 
@@ -53,25 +65,29 @@ Iris is in Testflight public testing. Join [here](https://testflight.apple.com/j
 Notes can play audio.
 
 ### Badge
-Indicates that the user is NIP05 verified.
+Indicates that the user has a NIP05 identifier.
 
 ### Block
 User blocks are private. When you block someone on Iris, DMs will be locally removed as well, and any further DMs rejected.
 Block lists are stored encrypted to self in event kind 16462.
 
 ### Color badges on user names
-- Blue =  a followed verified user (NIP05)
+- Blue =  a followed user with NIP05 identifier.
 - White = you don't follow but  1-10 of your following follows the user (hover over the icon and Iris shows the count)
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
 ### Feed and spam
-Iris rejects events from authors that your social network has not interacted with. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
+Iris rejects events from authors that your social network has not interacted with (actions such as follow, like, reply etc. that refer to the npub in question). You get way less spam and your follower count number is lower for the same reason. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
 
 ### Flag (public)
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
 
-### Followers
-Nostr doesn't save individual follows as events, only the most recent version of your contact list. You'd have to save the "followed" event locally either manually or by your client.
+### Follower count
+
+Your follower count may seem lower on Iris than other clients. Iris rejects events from authors that your social network has not interacted with. You get way less spam and your follower count number is lower for the same reason.
+
+### Following list
+Nostr doesn't save individual follows as events, only the most recent version of your contact list. You'd have to save the "followed" event locally either manually or by your client. Keeping more than one nostr client session open (not logged out) is not advised since this may reset your following list.
 
 ### Image links
 You can post image URLs and the media is shown in the notes. 
@@ -116,7 +132,7 @@ Iris shows [notifications](https://iris.to/post/note1esk3s2mkjmtxmew83407ywxt68y
 
 You can [search](https://iris.to/post/note1gd35qpaj2tke6ku8rjf4mtnjuafk4y5ghmrvspfse0s2a3stlrcqs5yn95) users by
 ⚡️ npub
-⚡️ NIP05 (jack@cash.app)
+⚡️ NIP05 (`jack@cash.app`)
 ⚡️ @ (and start typing the name)
 
 Notes by the NoteID (starting with note1)
@@ -186,7 +202,7 @@ Keyword search works with relays that have implemented it.
 Iris stores a few of the latest messages, contacts and metadata, but could store more in the future.
 
 ### NIP05 verification failed
-If your NIP05 is not showing check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
+If your NIP05 is not showing on your profile, check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
 
 if your NIP05 shows as valid on one client, but invalid on the other it could be a local cache issue. Try cmd/cntr + R to do a force refresh on the browser, or quit and restart the app.
 
@@ -202,15 +218,15 @@ Iris may not work with ws: but only with wss: (using webcrypto api). Browsers do
 ### Timestamps
 Iris saves the notifications and DM threads' last seen timestamp for easier client synchronisation.
 
-### What is NIP-5
-The NIP05 address is just an easier way to find your public key profile. Just like email addresses, many people can have the same NIP05 username (e.g. Bob), but not on the same domain (e.g. bob@domain.com).
+### What is NIP-05
+The NIP-05 identifier is an easier way to find your public key profile. Just like email addresses, many people can have the same NIP05 name (e.g. Alice), but not on the same domain (e.g. `alice@domain.com`).
 
 ## Questions and support
 
 ### Iris developer
 [Martti Malmi](https://iris.to/npub1g53mukxnjkcmr94fhryzkqutdz2ukq4ks0gvy5af25rgmwsl4ngq43drvk) develops Iris full-time.
 
-### Iris name
+### The name Iris
 Iris is the Greek goddess of the rainbow and the messenger of gods. Iris means rainbow in ancient Greek. The iris of the eye is named so because of its many colors. Eyes are essential for human communication. Iris users could be called [iridians](https://en.wiktionary.org/wiki/iridian).
 
 ### Iris Telegram group
