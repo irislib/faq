@@ -139,6 +139,7 @@ Notes by the NoteID (starting with note1)
 ⚡️ with hashtags and keywords
 
 There's also [support](https://iris.to/post/note1hr7ye9vud7g0jxe3mma0j75gamusrzwhtejth5erqm9v9h5u9j7q3lawa8) for Chinese, Japanese and Korean languages.
+Iris search is based on https://nostr.band with its content, results and features.
 
 ### Upload images
 You can use the attach media option when writing a note, or upload to [imgur](https://imgur.com/upload), [nostr.build](https://www.nostr.build/) or a similar service and then insert the link to the note.
