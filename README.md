@@ -72,7 +72,7 @@ User blocks are private. When you block someone on Iris, DMs will be locally rem
 Block lists are stored encrypted to self in event kind 16462.
 
 ### Color badges on user names
-- Blue =  a followed user with NIP05 identifier.
+- Blue =  a followed user
 - White = you don't follow but  1-10 of your following follows the user (hover over the icon and Iris shows the count)
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
@@ -153,7 +153,7 @@ You can publicly report users' posts. It publishes a delete event for the report
 ### Undo and delete
 In the note menu, there’s a delete option for notes. It’s up to relays and other clients to respect it so consider it more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works. Unboosting and unliking work the same way (not available yet).
 
-## View as
+### View as
 
 Iris allows you to view other accounts with their public key (a nostr protocol feature) if you're using a browser extension login. Visit the user's profile and open the user's profile menu and select the "[View as...](https://iris.to/post/note19nlkcm50kv4jfujhnprrgwa0m07s0wj7gqh663pu87sfgytgs6jqu32st4)" option.
 
