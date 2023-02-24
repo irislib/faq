@@ -67,6 +67,14 @@ Notes can play audio.
 ### Badge
 Indicates that the user has a NIP05 identifier.
 
+### Backups and Restore
+
+You can download (and copy) your profile data and the following list.
+
+You can restore your previous data either by uploading the file (.json) or pasting the same data into the field.
+
+Restoring your old following data will merge it with your current version. The profile data is restored only if it's the latest version (event). All other events are republished (not posted as new).
+
 ### Block
 User blocks are private. When you block someone on Iris, DMs will be locally removed as well, and any further DMs rejected.
 Block lists are stored encrypted to self in event kind 16462.
@@ -221,6 +229,24 @@ Iris saves the notifications and DM threads' last seen timestamp for easier clie
 
 ### What is NIP-05
 The NIP-05 identifier is an easier way to find your public key profile. Just like email addresses, many people can have the same NIP05 name (e.g. Alice), but not on the same domain (e.g. `alice@domain.com`).
+
+## Troubleshooting
+
+**Why what I am posting from one device is not always visible to others?**
+
+It could be that your other client's relays have not picked it up. 
+
+Copy the noteid from one client and paste it into the Iris search box on the other and see whether it comes up. 
+
+If you're sure that it is published you could try to "Resend to relays" from the note menu. 
+
+It could also be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
+
+**Why my picture is not showing up on other devices?**
+
+See the previous answer first.
+
+Iris uploads the pictures to a third-party service (e.g. www.nostr.build ) so it's a possibility that something is not working on their end. Yet, if you can get the picture URL from the original post (for example, "Copy raw data" from the note menu) and paste it on a browser you can verify whether it's available and visible.
 
 ## Questions and support
 
