@@ -232,7 +232,7 @@ The NIP-05 identifier is an easier way to find your public key profile. Just lik
 
 ## Troubleshooting
 
-**Why what I am posting from one device is not always visible to others?**
+### Why what I am posting from one device is not always visible to others?
 
 It could be that your other client's relays have not picked it up. 
 
@@ -242,9 +242,9 @@ If you're sure that it is published you could try to "Resend to relays" from the
 
 It could also be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
 
-**Why my picture is not showing up on other devices?**
+### Why my picture is not showing up on other devices?
 
-See the previous answer first.
+See the previous [answer](https://github.com/irislib/faq#why-what-i-am-posting-from-one-device-is-not-always-visible-to-others) first.
 
 Iris uploads the pictures to a third-party service (e.g. www.nostr.build ) so it's a possibility that something is not working on their end. Yet, if you can get the picture URL from the original post (for example, "Copy raw data" from the note menu) and paste it on a browser you can verify whether it's available and visible.
 
