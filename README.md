@@ -110,7 +110,7 @@ You can post image URLs and the media is shown in the notes.
 Global feed shows notes from everyone in your extended network of follows.
 
 ### Embedded media formats
-Youtube, IG, Tidal and Spotify play on notes.
+Youtube, IG, Spotify, Tidal and Twitch play on notes.
 
 Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM BS extension.
 
