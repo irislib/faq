@@ -85,7 +85,13 @@ Block lists are stored encrypted to self in event kind 16462.
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
 ### Feed and spam
-Iris rejects events from authors that your social network has not interacted with (actions such as follow, like, reply etc. that refer to the npub in question). You get way less spam and your follower count number is lower for the same reason. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
+Iris rejects events from authors that your social network has not interacted with (actions such as follow, like, reply etc. that refer to the npub in question). 
+
+For example, if you have a follower and let's call your follower a spammer: If nobody has ever liked, followed, replied or interacted in any (nostr event) way with the spammer then you will not see it.
+
+Your network starts from you and who you follow and goes forward from there. Who follows you is not automatically part of your network unless any interaction happens.
+
+The result is that you get less spam. Your follower count number is lower for the same reason. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
 
 ### Flag (public)
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
