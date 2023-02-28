@@ -224,6 +224,10 @@ if your NIP05 shows as valid on one client, but invalid on the other it could be
 ### Relays
 The relays Iris uses can change over time since they reflect the content you're viewing.
 
+You can add, remove and disable (and enable with ☑) relays. By saving publicly the current relay list is published and you can use it on other clients.
+
+Iris account has usually between 8-13 active relays and runs smoothly. 
+
 ### Relay requests
 Iris asks for 1000 latest events from known users initially. Some relays don't like the large authors filter (100-2000). Then it subscribes to all upcoming messages but discards those that are from unknown authors. When you open someone's profile, all their events are queried.
 
