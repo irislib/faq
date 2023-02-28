@@ -89,7 +89,7 @@ Block lists are stored encrypted to self in event kind 16462.
 Delete account feature on Account settings resets your profile and following, and disables login to Iris. If you want to come back after deleting your account, sign up again and create a new account.
 
 ### Feed and spam
-Iris accepts events from users that your social network has interacted with (actions such as follow, like, reply etc. that refer to the npub in question) from your 2nd degree follows and 3rd degree follows that have five or more followers.
+Iris accepts events from users that your social network has interacted with (actions such as follow, like, reply etc. that refer to the npub in question) from your 2nd degree follows and 3rd degree follows that have five or more followers. (Exception: if a shown message refers to some specific profile or event, or if you visit someone's profile, it is loaded in any case.)
 
 For example, if you have a follower and let's call your follower a spammer: If nobody has ever liked, followed, replied or interacted in any (nostr event) way with the spammer then you will not see it.
 
