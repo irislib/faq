@@ -84,6 +84,10 @@ Block lists are stored encrypted to self in event kind 16462.
 - White = you don't follow but  1-10 of your following follows the user (hover over the icon and Iris shows the count)
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
+### Delete account
+
+Delete account feature on Account settings resets your profile and following, and disables login to Iris. If you want to come back after deleting your account, sign up again and create a new account.
+
 ### Feed and spam
 Iris rejects events from authors that your social network has not interacted with (actions such as follow, like, reply etc. that refer to the npub in question). 
 
