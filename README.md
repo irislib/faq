@@ -88,14 +88,17 @@ Block lists are stored encrypted to self in event kind 16462.
 
 Delete account feature on Account settings resets your profile and following, and disables login to Iris. If you want to come back after deleting your account, sign up again and create a new account.
 
-### Feed and spam
-Iris accepts events from users that your social network has interacted with (actions such as follow, like, reply etc. that refer to the npub in question) from your 2nd degree follows and 3rd degree follows that have five or more followers. (Exception: if a shown message refers to some specific profile or event, or if you visit someone's profile, it is loaded in any case.)
+### Feed
 
-For example, if you have a follower and let's call your follower a spammer: If nobody has ever liked, followed, replied or interacted in any (nostr event) way with the spammer then you will not see it.
+Following feed shows only the people you directly follow.
 
-Your network starts from you and who you follow and goes forward from there. Who follows you is not automatically part of your network unless any interaction happens.
+Global feed shows all the events that you have configured Iris to accept.
 
-The result is that you get less spam. Your follower count number is lower for the same reason. The downside is that discovery of new users is more difficult, and sometimes you see fewer posts than on other clients.
+You can adjust your feed experience by setting the following distance limit (or turn it off entirely) from Settings / Social network. Your network starts from you and who you follow and goes forward from there.
+
+You can also adjust the minimum amount of followers required per user at the maximum followed distance you have set that Iris will include in the feed. These settings apply to all your feeds (both Following and Global).
+
+The Social network -settings are stored locally only. If you have multiple clients they are not synched between clients.
 
 ### Flag (public)
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
@@ -111,7 +114,7 @@ Nostr doesn't save individual follows as events, only the most recent version of
 You can post image URLs and the media is shown in the notes. 
 
 ### Global feed
-Global feed shows notes from everyone in your extended network of follows.
+Global feed shows events from everyone in your extended network of follows.
 
 ### Embedded media formats
 Youtube, IG, Spotify, Tidal and Twitch play on notes.
