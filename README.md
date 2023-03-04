@@ -53,11 +53,8 @@ Namesquatting, impersonation, vulgar or otherwise offensive usernames may result
 
 Iris works on most common browsers: [iris.to](https://iris.to/). 
 
-### iOS app
-You can install the browser app version on your home screen or use the Testflight [version](https://testflight.apple.com/join/5xdoDCmG).
-
-### Testflight
-Iris is in Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
+### iOS app (Apple)
+Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
 
 ## Using Iris
 
