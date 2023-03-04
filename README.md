@@ -56,6 +56,10 @@ Iris works on most common browsers: [iris.to](https://iris.to/).
 ### iOS app (Apple)
 Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
 
+### Testflight
+
+Iris is in Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
+
 ## Using Iris
 
 ### Audio player
