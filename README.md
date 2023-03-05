@@ -250,6 +250,12 @@ The NIP-05 identifier is an easier way to find your public key profile. Just lik
 
 ## Troubleshooting
 
+### Posting does not seem to work
+
+It could be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
+
+If your relays are not allowing you to write to them new events you may have only read-only access (usually with paid relays). 
+
 ### Why what I am posting from one device is not always visible to others?
 
 It could be that your other client's relays have not picked it up. 
