@@ -266,6 +266,12 @@ If you're sure that it is published you could try to "Resend to relays" from the
 
 It could also be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
 
+### Video is not playing on note
+
+If the original video format is not supported by your browser or operating system Iris cannot play it. For example, Chrome (and Chromium-based browsers such as Brave) do not play Apple's QuickTime format (.mov).
+
+The file could also be corrupted, or not downloaded completely or if you have disabled embeds on the Settings menu it may not play either.
+
 ### Why my picture is not showing up on other devices?
 
 See the previous [answer](https://github.com/irislib/faq#why-what-i-am-posting-from-one-device-is-not-always-visible-to-others) first.
