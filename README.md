@@ -209,6 +209,11 @@ Image loading is done via proxy to resize and avoid IP leaking unless it's from 
 ### Private message privacy (DMs)
 Only the message content is encrypted: sender, recipient and timestamp are visible to everyone.
 
+### Privacy on relays
+Your internet protocol (IP) address is exposed to the relays you connect to. If you want to improve your privacy, consider utilizing a service that masks your IP address (e.g. a VPN) from trackers online. You can also connect to Iris messenger on [Tor Browser]([url](https://www.torproject.org/)), which will mask your IP address. 
+
+The relay also learns which public keys you are requesting, meaning your public key will be tied to your IP address.
+
 ## Network, storage and relays
 
 ### Caching
