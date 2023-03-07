@@ -105,8 +105,9 @@ The Social network -settings are stored locally only. If you have multiple clien
 The users you choose to report are blocked on your feed and the list of your flagged users is public.
 
 ### Follower count
+The follower count is constructed from your social network's following lists. Iris gathers the data from relays and counts who is following you. There is no single "follower count" as in traditional centralised social media.
 
-Your follower count may seem lower on Iris than other clients. Iris rejects events from authors that your social network has not interacted with. You get way less spam and your follower count number is lower for the same reason.
+The follower count may vary between clients and sessions for this reason. Some relays may be offline or not accessible and therefore the current follower count reflects this. It does not necessarily mean that someone has unfollowed you.
 
 ### Following list
 Nostr doesn't save individual follows as events, only the most recent version of your contact list. You'd have to save the "followed" event locally either manually or by your client. Keeping more than one nostr client session open (not logged out) is not advised since this may reset your following list.
