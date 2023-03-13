@@ -23,10 +23,15 @@ Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgu
 You can change the theme on settings. Iris will remember your selection even on other clients.
 
 ### Login options
-Supports npub and window.nostr login as well as Alby and nos2x browser extensions. You can also paste your public key (npub) if you don't want to make any changes (e.g. follow, write notes, like, read DMs etc.).
+
+Supports npub and window.nostr login as well as Alby and nos2x among other browser extensions. 
+
+You can also paste your public key (npub) if you don't want to make any changes (e.g. follow, write notes, like, read DMs etc.).
 
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
+
+Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
 
 ### Username (nostr)
 Iris supports profile URLs in the following formats ([examples](https://iris.to/post/note1wn6axvzvnzn8hr45j95qlxpag4u7xcdx79rtk0uet8s5hhqynfhsdfppve)): 
@@ -56,17 +61,18 @@ Iris works on most common browsers: [iris.to](https://iris.to/).
 ### iOS app (Apple)
 Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
 
+Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
+
 ### Testflight
 
 Iris is in Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
 
+Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
+
 ## Using Iris
 
 ### Audio player
-Notes can play audio.
-
-### Badge
-Indicates that the user has a NIP05 identifier.
+Notes can play audio such as mp3-files if your OS or browser suppors it.
 
 ### Backups and Restore
 
@@ -93,16 +99,13 @@ Delete account feature on Account settings resets your profile and following, an
 
 Following feed shows only the people you directly follow.
 
-Global feed shows all the events that you have configured Iris to accept.
+Global feed shows events from everyone in your extended network of follows that you have configured Iris to accept.
 
 You can adjust your feed experience by setting the following distance limit (or turn it off entirely) from Settings / Social network. Your network starts from you and who you follow and goes forward from there.
 
 You can also adjust the minimum amount of followers required per user at the maximum followed distance you have set that Iris will include in the feed. These settings apply to all your feeds (both Following and Global).
 
 The Social network -settings are stored locally only. If you have multiple clients they are not synched between clients.
-
-### Flag (public)
-The users you choose to report are blocked on your feed and the list of your flagged users is public.
 
 ### Follower count
 The follower count is constructed from your social network's following lists. Iris gathers the data from relays and counts who is following you. There is no single "follower count" as in traditional centralised social media.
@@ -114,9 +117,6 @@ Nostr doesn't save individual follows as events, only the most recent version of
 
 ### Image links
 You can post image URLs and the media is shown in the notes. 
-
-### Global feed
-Global feed shows events from everyone in your extended network of follows.
 
 ### Embedded media formats
 Youtube, IG, Spotify, Tidal and Twitch play on notes.
@@ -145,7 +145,7 @@ Mentioning users When writing a note, type @ and wait for the menu to come out a
 Posting notes [works](https://iris.to/post/note1e8znafpc9sxgq447t6llsc0thp3eh80mh5zy6g6wqhygu8pf8ggq6maj9q) also by pressing cmd/ctrl + return on your keyboard.
 
 ### New follower notifications
-Iris shows notifications for new followers but doesn't save the notification yet. The notification is only shown when Iris has locally cached someone's contact list and gets a new version of it (updates were made elsewhere).
+Iris shows notifications for new followers but doesn't save the notification. The notification is only shown when Iris has locally cached someone's contact list and gets a new version of it (updates were made elsewhere).
 
 ### Notifications
 
@@ -171,8 +171,10 @@ You can use the attach media option when writing a note or upload to [imgur](htt
 
 Iris uploads to [nostr.build](https://www.nostr.build/) when using the attach media option and inserts the media link(s) after a successful upload.
 
-### Report notes
+### Report notes and users (public)
 You can publicly report users' posts. It publishes a delete event for the reported note in Nostr.
+
+The users you choose to report are blocked on your feed and the list of your reported users is public.
 
 ### Undo and delete
 In the note menu, there’s a delete option for notes. It’s up to relays and other clients to respect it so consider it more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works. Unboosting and unliking work the same way (not available yet).
@@ -193,12 +195,13 @@ Notes preview and play Magnet webtorrent media links (may not work on mobile dev
 Issue a Lightning invoice or you can also use `lightning:iristoapp@getalby.com`format.
 
 ### Zapping
-Your mobile wallet needs to be registered on the device for the link to be recognised when you click it.
+
+You can zap by clicking the ⚡️ button. Your mobile wallet needs to be registered on the device for the link to be recognised when you click it.
 
 Lightning wallets are starting to implement the zapping feature. You could try
 www.walletofsatoshi.com for mobile or https://getalby.com for desktop, for example. The technical term is [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md).
 
-Currently, The ⚡️ is a lightning: link to the user's address ([see how it works](https://iris.to/post/note10uvvg0drlevur3y3cy6xgncwyg7ww28222yrkpfjy6kcc9w9d72qjnn5qp)). There is no listing of zaps yet. 
+The ⚡️ is a lightning: link to the user's address ([see how it works](https://iris.to/post/note10uvvg0drlevur3y3cy6xgncwyg7ww28222yrkpfjy6kcc9w9d72qjnn5qp)).
 
 ## Privacy and security
 
@@ -206,10 +209,10 @@ Currently, The ⚡️ is a lightning: link to the user's address ([see how it wo
 Browser applications are not signed by the developer unlike native apps and browser extensions. Someone could hack the server or DNS and serve malicious code that steals your private key. XSS is also a risk, although not common in applications that use a framework like react.
 
 ### Privacy on uploaded images
-Image loading is done via proxy to resize and avoid IP leaking unless it's from a whitelisted (e.g. imgur.com and nostr.build)
+Image loading is done via proxy to resize and avoid IP leaking unless it's from a whitelisted (e.g. imgur.com and nostr.build) service.
 
 ### Private message privacy (DMs)
-Only the message content is encrypted: sender, recipient and timestamp are visible to everyone.
+Only the message content is encrypted: the sender, recipient and timestamp are visible to everyone.
 
 ### Privacy on relays
 Your internet protocol (IP) address is exposed to the relays you connect to. If you want to improve your privacy, consider utilizing a service that masks your IP address (e.g. a VPN) from trackers online. You can also connect to Iris messenger on [Tor Browser]([url](https://www.torproject.org/)), which will mask your IP address. 
@@ -219,7 +222,7 @@ The relay also learns which public keys you are requesting, meaning your public 
 ## Network, storage and relays
 
 ### Caching
-Iris caches profiles, follows and the latest 1000 notes for a faster and better user experience.
+Iris caches profiles, follows and the latest notes for a faster and better user experience.
 
 ### Features disappeared or missing?
 
@@ -229,7 +232,7 @@ If you force refresh on your browser that might help (cmd/ctrl +R in some browse
 Keyword search works with relays that have implemented it.
 
 ### Local storage
-Iris stores a few of the latest messages, contacts and metadata, but could store more in the future.
+Iris stores a few of the latest messages, contacts and metadata for better user experience.
 
 ### NIP05 verification failed
 If your NIP05 is not showing on your profile, check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
@@ -257,11 +260,21 @@ The NIP-05 identifier is an easier way to find your public key profile. Just lik
 
 ## Troubleshooting
 
+### Try this first
+
+If you force refresh on your browser that might help (cmd/ctrl +R in some browsers) or quitting the app may also help clear the local cache ([iOS](https://support.apple.com/en-us/HT201330) instructions).
+
 ### Posting does not seem to work
 
 It could be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
 
 If your relays are not allowing you to write to them new events you may have only read-only access (usually with paid relays). 
+
+### Video is not playing on note
+
+If the original video format is not supported by your browser or operating system Iris cannot play it. For example, Chrome (and Chromium-based browsers such as Brave) do not play Apple's QuickTime format (.mov).
+
+The file could also be corrupted, or not downloaded completely or if you have disabled embeds on the Settings menu it may not play either.
 
 ### Why what I am posting from one device is not always visible to others?
 
@@ -272,12 +285,6 @@ Copy the noteid from one client and paste it into the Iris search box on the oth
 If you're sure that it is published you could try to "Resend to relays" from the note menu. 
 
 It could also be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
-
-### Video is not playing on note
-
-If the original video format is not supported by your browser or operating system Iris cannot play it. For example, Chrome (and Chromium-based browsers such as Brave) do not play Apple's QuickTime format (.mov).
-
-The file could also be corrupted, or not downloaded completely or if you have disabled embeds on the Settings menu it may not play either.
 
 ### Why my picture is not showing up on other devices?
 
