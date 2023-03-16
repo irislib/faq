@@ -8,6 +8,110 @@ If you cannot find the answer to your question, you can always reach out to othe
 
 There is a growing number of Nostr resources that may also instruct in using Iris (e.g. [nostr.how](https://www.nostr.how/clients/iris)).
 
+## Contents
+
+<details>
+  <summary><strong>Getting started</strong></summary>
+
+  - [Alby support](#alby-support)
+  - [Avatar](#avatar)
+  - [Profile banner size](#profile-banner-size)
+  - [Dark/light theme](#darklight-theme)
+  - [Login options](#login-options)
+  - [Android version](#android-version)
+  - [Username (nostr)](#username-nostr)
+  - [Iris username](#iris-username)
+  - [Browser version](#browser-version)
+  - [iOS app (Apple)](#ios-app-apple)
+  - [Testflight](#testflight)
+
+</details>
+
+<details>
+  <summary><strong>Using Iris</strong></summary>
+
+  - [Audio player](#audio-player)
+  - [Backups and Restore](#backups-and-restore)
+  - [Block](#block)
+  - [Color badges on user names](#color-badges-on-user-names)
+  - [Delete Account](#delete-account)
+  - [Feed](#feed)
+  - [Follower Count](#follower-count)
+  - [Following List](#following-list)
+  - [Image Links](#image-links)
+  - [Embedded Media Formats](#embedded-media-formats)
+  - [Likes](#likes)
+  - [New User / Not Logged In](#new-user--not-logged-in)
+  - [Log in with the Public Key](#log-in-with-the-public-key)
+  - [Markdown](#markdown)
+  - [Notes](#notes)
+  - [New Follower Notifications](#new-follower-notifications)
+  - [Notifications](#notifications)
+  - [Search Notes](#search-notes)
+  - [Upload Media](#upload-media)
+  - [Report Notes and Users (Public)](#report-notes-and-users-public)
+  - [Undo and Delete](#undo-and-delete)
+  - [View As](#view-as)
+  - [Webtorrent Magnet Links](#webtorrent-magnet-links)
+
+</details>
+
+<details>
+  <summary><strong>Lightning</strong></summary>
+
+  - [Lightning Address](#lightning-address)
+  - [Receiving Lightning](#receiving-lightning)
+  - [Zapping](#zapping)
+
+</details>
+
+<details>
+  <summary><strong>Privacy and Security</strong></summary>
+
+  - [Key Safety on Browser Apps](#key-safety-on-browser-apps)
+  - [Privacy on Uploaded Images](#privacy-on-uploaded-images)
+  - [Private Message Privacy (DMs)](#private-message-privacy-dms)
+  - [Privacy on Relays](#privacy-on-relays)
+
+</details>
+
+<details>
+  <summary><strong>Network, Storage, and Relays</strong></summary>
+  <ul>
+    <li><a href="#caching">Caching</a></li>
+    <li><a href="#features-disappeared-or-missing">Features Disappeared or Missing?</a></li>
+    <li><a href="#keyword-search">Keyword Search</a></li>
+    <li><a href="#local-storage">Local Storage</a></li>
+    <li><a href="#nip05-verification-failed">NIP05 Verification Failed</a></li>
+    <li><a href="#relays">Relays</a></li>
+    <li><a href="#relay-requests">Relay Requests</a></li>
+    <li><a href="#umbrel">Umbrel</a></li>
+    <li><a href="#timestamps">Timestamps</a></li>
+    <li><a href="#what-is-nip-05">What is NIP-05</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Troubleshooting</strong></summary>
+  <ul>
+    <li><a href="#try-this-first">Try this first</a></li>
+    <li><a href="#posting-does-not-seem-to-work">Posting does not seem to work</a></li>
+    <li><a href="#video-is-not-playing-on-note">Video is not playing on note</a></li>
+    <li><a href="#why-what-i-am-posting-from-one-device-is-not-always-visible-to-others">Why what I am posting from one device is not always visible to others?</a></li>
+    <li><a href="#why-my-picture-is-not-showing-up-on-other-devices">Why my picture is not showing up on other devices?</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Questions and support</strong></summary>
+  <ul>
+    <li><a href="#iris-developer">Iris developer</a></li>
+    <li><a href="#the-name-iris">The name Iris</a></li>
+    <li><a href="#iris-telegram-group">Iris Telegram group</a></li>
+    <li><a href="#language-options">Language options</a></li>
+  </ul>
+</details>
+
 ## Getting started
 
 ### Alby support
