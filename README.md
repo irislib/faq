@@ -1,5 +1,9 @@
 # Iris FAQ
 
+<img align="right" src="./iris_ss.png" height="230px" />
+<img align="right" src="./iris.png" height="230px" />
+
+
 [Iris](https://iris.to/) is a Nostr [Android](https://play.google.com/store/apps/details?id=to.iris.twa), [iOS](https://apps.apple.com/app/iris-the-nostr-client/id1665849007) and [web](https://iris.to/) client for better social networks.
 
 Please note that this FAQ section is a work-in-progress. The information may have already changed due to the frequent app and network updates.
