@@ -1,22 +1,26 @@
-# Iris FAQ
+# FAQ: Iris – The app for better social networks
 
 <img align="right" src="./iris_ss.png" height="230px" />
 <img align="right" src="./iris.png" height="230px" />
 
+[Iris](https://iris.to/) is a Nostr [Android](https://play.google.com/store/apps/details?id=to.iris.twa), [iOS](https://apps.apple.com/app/iris-the-nostr-client/id1665849007) and [web](https://iris.to/) client for better social networks. 
+For desktop (Windows, MacOS, Linux), Docker and other versions, see the [instructions](https://github.com/irislib/iris-messenger).
 
-[Iris](https://iris.to/) is a Nostr [Android](https://play.google.com/store/apps/details?id=to.iris.twa), [iOS](https://apps.apple.com/app/iris-the-nostr-client/id1665849007) and [web](https://iris.to/) client for better social networks.
+Create meaningful connections and build your network with Iris. 
 
-Please note that this FAQ section is a work-in-progress. The information may have already changed due to the frequent app and network updates.
+Say goodbye to distractions, ads and controlled feeds. Say hello to accessible and secure social networking. Iris gives you complete control over your data and profile.
 
-If you cannot find the answer to your question, you can always reach out to other Iris and Nostr users for assistance. 
+Choose a name or alias and start connecting with friends and followers. You don't need a phone number or any other personal information to sign up.
 
-There is a growing number of Nostr resources that may also instruct in using Iris (e.g. [nostr.how](https://www.nostr.how/clients/iris)).
+Discover a new world of social networking with Iris that is based on a simple, flexible, and open protocol called Nostr that is easy to use and ensures your data is always safe.
+
+Start experiencing the future of social media with Iris.
 
 ## Contents
 
 <details>
   <summary><strong>Getting started</strong></summary>
-
+  
   - [Alby support](#alby-support)
   - [Avatar](#avatar)
   - [Profile banner size](#profile-banner-size)
@@ -117,6 +121,8 @@ There is a growing number of Nostr resources that may also instruct in using Iri
 </details>
 
 ## Getting started
+
+There is a growing number of instruction resources how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
 
 ### Alby support
 Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension also with multiple keys.
@@ -401,6 +407,10 @@ See the previous [answer](https://github.com/irislib/faq#why-what-i-am-posting-f
 Iris uploads the pictures to a third-party service (e.g. www.nostr.build ) so it's a possibility that something is not working on their end. Yet, if you can get the picture URL from the original post (for example, "Copy raw data" from the note menu) and paste it on a browser you can verify whether it's available and visible.
 
 ## Questions and support
+
+Please note that this FAQ section is a work-in-progress. The information may have already changed due to the frequent app and network updates.
+
+If you cannot find the answer to your question, you can always reach out to other Iris and Nostr users for assistance.
 
 ### Iris developer
 [Martti Malmi](https://iris.to/npub1g53mukxnjkcmr94fhryzkqutdz2ukq4ks0gvy5af25rgmwsl4ngq43drvk) develops Iris full-time.
