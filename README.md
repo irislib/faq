@@ -122,10 +122,12 @@ Start experiencing the future of social media with Iris.
 
 ## Getting started
 
-There is a growing number of instruction resources how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
+There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
+
+https://user-images.githubusercontent.com/52623440/225862232-7ac9a16a-bf14-4745-ad48-3e3a67bc597e.mp4
 
 ### Alby support
-Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension also with multiple keys.
+Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension with multiple keys.
 
 ### Avatar
 Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgut84z5epwhnhh23d6sfkyjvm) on Iris.
