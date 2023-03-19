@@ -158,7 +158,6 @@ Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgu
   
 </details>
 
-
 ### Dark/light theme
 You can change the theme on settings. Iris will remember your selection even on other clients.
 
@@ -201,7 +200,7 @@ You can log out or switch account. Notice that if you have not saved your privat
 </details>
 
 <details>
-  <summary>Switch accounts</summary>
+  <summary>Switch account</summary>
   
   <img src="https://user-images.githubusercontent.com/52623440/226196031-9e51c3f4-1181-4793-8ff8-833ec630d8a3.gif" width="540">
 
@@ -225,9 +224,23 @@ The username that you can change in "edit profile" is not unique. However, NIP05
 
 Iris username helps users to find your nostr profile easier.
 
+<details>
+  <summary>How to register an Iris username</summary>
+  
+  https://user-images.githubusercontent.com/52623440/226199682-d32d345e-9d3f-424e-abd6-76d2897c740e.mp4
+
+</details>
+
 The format is `iris.to/username` (for example: [iris.to/sirius](https://iris.to/sirius)).
 
 You can also use `username@iris.to` format (NIP05; e.g. `sirius@iris.to`) in user searches.
+
+<details>
+  <summary>Search with Iris username (NIP05 identifier)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226200120-50cf3a31-fddb-4b61-b0a3-7e0a60ece434.gif" width="540">
+
+</details>
 
 You cannot change your Iris username. They are unique, more than 3 characters long and using letters and numbers only. You can use underscore (\_) but no other special characters are allowed.
 
