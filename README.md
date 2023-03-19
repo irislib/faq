@@ -248,18 +248,18 @@ Namesquatting, impersonation, vulgar or otherwise offensive usernames may result
 
 ### Browser version
 
-Iris works on most common browsers: [iris.to](https://iris.to/). 
+The web version of Iris works on most common browsers: [iris.to](https://iris.to/). Notice that some of the features may not be available or need to be enabled or configured for them to work (for example, some media files may not play on Chrome and Chromium-based browsers such as Brave).
 
 ### iOS app (Apple)
 Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
 
-Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
+Iris updates the version automatically. No need to install a new version. Just [quit the app and reopen](https://support.apple.com/en-gb/guide/iphone/iph83bfec492/ios) it if you want to expedite the updating or if it does not do it for some reason.
 
 ### Testflight
 
 Iris is in Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
 
-Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
+Iris updates the version automatically. No need to install a new version. Just [quit the app and reopen](https://support.apple.com/en-gb/guide/iphone/iph83bfec492/ios) it if you want to expedite the updating or if it does not do it for some reason.
 
 ## Using Iris
 
@@ -271,6 +271,27 @@ Notes can play audio such as mp3-files if your OS or browser suppors it.
 You can download (and copy) your profile data and the following list.
 
 You can restore your previous data either by uploading the file (.json) or pasting the same data into the field.
+
+<details>
+  <summary>Backup and Restore using files (JSON)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226203188-66e954c0-6ecb-4161-b155-a492a08ae751.gif" width="540">
+
+</details>
+
+<details>
+  <summary>Backup and Restore using clipboard (raw data; JSON)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226203249-9381bdbf-128e-4ba7-bb3c-68e358d429ea.gif" width="540">
+
+</details>
+
+<details>
+  <summary>Copy only the profile (raw data; JSON)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226203361-25a68411-fd6e-477e-8c3c-761740bbcd5a.png" width="540">
+
+</details>
 
 Restoring your old following data will merge it with your current version. The profile data is restored only if it's the latest version (event). All other events are republished (not posted as new).
 
