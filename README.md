@@ -27,6 +27,7 @@ Start experiencing the future of social media with Iris.
   - [Profile banner](#profile-banner)
   - [Dark/light theme](#darklight-theme)
   - [Login options](#login-options)
+  - [Log out or switch account](#log-out-or-switch-account)  
   - [Android version](#android-version)
   - [Username (nostr)](#username-nostr)
   - [Iris username](#iris-username)
@@ -170,9 +171,41 @@ You can change the theme on settings. Iris will remember your selection even on 
 
 ### Login options
 
-Supports npub and window.nostr login as well as Alby and nos2x among other browser extensions. 
+Log in with your private key (nsec), public key (npub) or with an extension such as [Alby](https://getalby.com) or [nos2x](https://chrome.google.com/webstore/detail/nos2x/kpgefcfmnafjgpblomihpgmejjdanjjp) (Iris supports window.nostr login).
 
-You can also paste your public key (npub) if you don't want to make any changes (e.g. follow, write notes, like, read DMs etc.).
+If you log in with a public key (npub) you cannot make any changes such as follow, write notes, like, read DMs.
+
+<details>
+  <summary>Login with public or private key (npub/nsec)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226194818-4e0f4a1d-5f14-49a9-b5df-7e5caddd01f2.gif" width="540">
+
+</details>
+
+<details>
+  <summary>Login with an extension</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226194886-31e64b76-fd55-47ba-a073-28d6cc87dc27.gif" width="540">
+
+</details>
+
+### Log out or switch account
+
+You can log out or switch account. Notice that if you have not saved your private key (nsec) you cannot log in again and there is no way to restore your account access. Only you have access to the private key.
+
+<details>
+  <summary>Log out</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226195949-419df7b6-b6a9-463d-bf09-f5c9cbda459f.gif" width="540">
+
+</details>
+
+<details>
+  <summary>Switch accounts</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226196031-9e51c3f4-1181-4793-8ff8-833ec630d8a3.gif" width="540">
+
+</details>
 
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
