@@ -21,6 +21,7 @@ Start experiencing the future of social media with Iris.
 <details>
   <summary><strong>Getting started</strong></summary>
   
+  - [How to sign up](#sign-up-get-a-free-nip05--iris-username-in-40-seconds)
   - [Alby support](#alby-support)
   - [Avatar](#avatar)
   - [Profile banner size](#profile-banner-size)
@@ -122,9 +123,11 @@ Start experiencing the future of social media with Iris.
 
 ## Getting started
 
-There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
+## Sign up, get a free NIP05 & Iris username in 40 seconds
 
 https://user-images.githubusercontent.com/52623440/225862232-7ac9a16a-bf14-4745-ad48-3e3a67bc597e.mp4
+
+<br>There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
 
 ### Alby support
 Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension with multiple keys.
@@ -210,6 +213,8 @@ Block lists are stored encrypted to self in event kind 16462.
 ### Delete account
 
 Delete account feature on Account settings resets your profile and following, and disables login to Iris. If you want to come back after deleting your account, sign up again and create a new account.
+
+The delete account option is only available on some versions (e.g. Play and App store).
 
 ### Feed
 
