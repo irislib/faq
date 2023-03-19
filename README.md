@@ -140,11 +140,18 @@ Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5
 ### Avatar
 Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgut84z5epwhnhh23d6sfkyjvm) on Iris.
 
+<details>
+  <summary>Edit profile settings / Picture url</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226186974-f112bd8f-922c-4f65-9308-603db3d109ba.gif" alt="avatar-settings" width="540">
+  
+</details>
+
 ### Profile banner
 1500x500 pixels is the preferred size.
 
 <details>
-  <summary>Edit profile settings</summary>
+  <summary>Edit profile settings / Banner url</summary>
   
   <img src="https://user-images.githubusercontent.com/52623440/226184051-ac4d3a66-f5a0-4ef2-a0f8-72c812ed3fbf.gif" alt="avatar-settings" width="540">
   
@@ -153,6 +160,13 @@ Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgu
 
 ### Dark/light theme
 You can change the theme on settings. Iris will remember your selection even on other clients.
+
+<details>
+  <summary>Settings / Appearance</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226187318-244454ec-121a-4b08-814b-85b129de0d68.gif" width="540">
+  
+</details>
 
 ### Login options
 
