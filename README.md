@@ -24,7 +24,7 @@ Start experiencing the future of social media with Iris.
   - [How to sign up](#sign-up-get-a-free-nip05--iris-username-in-40-seconds)
   - [Alby support](#alby-support)
   - [Avatar](#avatar)
-  - [Profile banner size](#profile-banner-size)
+  - [Profile banner](#profile-banner)
   - [Dark/light theme](#darklight-theme)
   - [Login options](#login-options)
   - [Android version](#android-version)
@@ -125,9 +125,14 @@ Start experiencing the future of social media with Iris.
 
 ## Sign up, get a free NIP05 & Iris username in 40 seconds
 
-https://user-images.githubusercontent.com/52623440/225862232-7ac9a16a-bf14-4745-ad48-3e3a67bc597e.mp4
+<details>
+  <summary>See the short video</summary>
 
-<br>There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
+  https://user-images.githubusercontent.com/52623440/225862232-7ac9a16a-bf14-4745-ad48-3e3a67bc597e.mp4
+
+</details>
+  
+There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
 
 ### Alby support
 Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension with multiple keys.
@@ -135,8 +140,16 @@ Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5
 ### Avatar
 Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgut84z5epwhnhh23d6sfkyjvm) on Iris.
 
-### Profile banner size
-1500x500 pixels is the preferred size. 
+### Profile banner
+1500x500 pixels is the preferred size.
+
+<details>
+  <summary>Edit profile settings</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226184051-ac4d3a66-f5a0-4ef2-a0f8-72c812ed3fbf.gif" alt="avatar-settings" width="540">
+  
+</details>
+
 
 ### Dark/light theme
 You can change the theme on settings. Iris will remember your selection even on other clients.
