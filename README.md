@@ -124,7 +124,7 @@ Start experiencing the future of social media with Iris.
 
 ## Getting started
 
-## Sign up, get a free NIP05 & Iris username in 40 seconds
+### Sign up, get a free NIP05 & Iris username in 40 seconds
 
 <details>
   <summary>See the short video</summary>
