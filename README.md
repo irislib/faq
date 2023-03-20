@@ -43,7 +43,7 @@ Start experiencing the future of social media with Iris.
   - [Audio player](#audio-player)
   - [Backups and Restore](#backups-and-restore)
   - [Block](#block)
-  - [Color badges on user names](#color-badges-on-user-names)
+  - [Color badges on user names](#color-badges-on-usernames)
   - [Delete Account](#delete-account)
   - [Feed](#feed)
   - [Follower Count](#follower-count)
@@ -144,8 +144,8 @@ Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgu
 <details>
   <summary>Edit profile settings / Picture url</summary>
   
-  <img src="https://user-images.githubusercontent.com/52623440/226186974-f112bd8f-922c-4f65-9308-603db3d109ba.gif" alt="avatar-settings" width="540">
-  
+  <img src="https://user-images.githubusercontent.com/52623440/226291027-a962f99e-a199-4013-a78a-015d2a0a25be.gif" alt="avatar-settings" width="540">
+
 </details>
 
 ### Profile banner
@@ -264,7 +264,7 @@ Iris updates the version automatically. No need to install a new version. Just [
 ## Using Iris
 
 ### Audio player
-Notes can play audio such as mp3-files if your OS or browser suppors it.
+Notes can play audio such as mp3-files if your OS or browser supporst it.
 
 ### Backups and Restore
 
@@ -296,12 +296,27 @@ You can restore your previous data either by uploading the file (.json) or pasti
 Restoring your old following data will merge it with your current version. The profile data is restored only if it's the latest version (event). All other events are republished (not posted as new).
 
 ### Block
-User blocks are private. When you block someone on Iris, DMs will be locally removed as well, and any further DMs rejected.
-Block lists are stored encrypted to self in event kind 16462.
+User blocks are private (they are encrypted and stored as a nostr event (kind 16462)).
 
-### Color badges on user names
+When you block someone on Iris, DMs will be locally removed as well, and any further DMs are rejected. If you followed the user before blocking the block also unfollows the user. If you want to unblock you need to follow the user again. Unblocking does not restore the previous follow status.
+
+<details>
+  <summary>Block/unblock user from profile</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226293685-05ec1f0a-2dce-4bc5-9c1c-ac71b9445590.gif" width="540">
+
+</details>
+
+<details>
+  <summary>Block/unblock user from note</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226294788-ed309570-d171-457f-be60-13b4476186c1.gif" width="540">
+
+</details>
+
+### Color badges on usernames
 - Blue =  a followed user
-- White = you don't follow but  1-10 of your following follows the user (hover over the icon and Iris shows the count)
+- White = you don't follow but 1-10 of your following follows the user (hover over the icon and Iris shows the count)
 - Yellow = you don't follow but over 10 of your following follows the user (hover over the icon and Iris shows the count)
 
 ### Delete account
