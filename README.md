@@ -303,12 +303,12 @@ When you block someone on Iris, DMs will be locally removed as well, and any fur
 <details>
   <summary>Block/unblock user from profile</summary>
   
-  <img src="https://user-images.githubusercontent.com/52623440/226293685-05ec1f0a-2dce-4bc5-9c1c-ac71b9445590.gif" width="540">
+  <img src="https://user-images.githubusercontent.com/52623440/226297308-c51ce738-d453-47fc-bcf9-bf7ed16baee3.gif" width="540">
 
 </details>
 
 <details>
-  <summary>Block/unblock user from note</summary>
+  <summary>Block user from note</summary>
   
   <img src="https://user-images.githubusercontent.com/52623440/226294788-ed309570-d171-457f-be60-13b4476186c1.gif" width="540">
 
