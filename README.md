@@ -248,7 +248,9 @@ Namesquatting, impersonation, vulgar or otherwise offensive usernames may result
 
 ### Browser version
 
-The web version of Iris works on most common browsers: [iris.to](https://iris.to/). Notice that some of the features may not be available or need to be enabled or configured for them to work (for example, some media files may not play on Chrome and Chromium-based browsers such as Brave).
+The web version of Iris works on most common browsers: [iris.to](https://iris.to/).
+
+Notice that some of the features may not be available or need to be enabled or configured for them to work (for example, some media files may not play on Chrome and Chromium-based browsers such as Brave).
 
 ### iOS app (Apple)
 Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
@@ -264,7 +266,7 @@ Iris updates the version automatically. No need to install a new version. Just [
 ## Using Iris
 
 ### Audio player
-Notes can play audio such as mp3-files if your OS or browser supporst it.
+Notes can play audio such as mp3-files if your OS or browser support it.
 
 ### Backups and Restore
 
@@ -296,7 +298,7 @@ You can restore your previous data either by uploading the file (.json) or pasti
 Restoring your old following data will merge it with your current version. The profile data is restored only if it's the latest version (event). All other events are republished (not posted as new).
 
 ### Block
-User blocks are private (they are encrypted and stored as a nostr event (kind 16462)).
+User blocks are private (they are encrypted and stored as a nostr event kind 16462).
 
 When you block someone on Iris, DMs will be locally removed as well, and any further DMs are rejected. If you followed the user before blocking the block also unfollows the user. If you want to unblock you need to follow the user again. Unblocking does not restore the previous follow status.
 
@@ -337,24 +339,44 @@ You can also adjust the minimum amount of followers required per user at the max
 
 The Social network -settings are stored locally only. If you have multiple clients they are not synched between clients.
 
+<details>
+  <summary>Settings / Social network</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226315191-bcd55d5c-98d4-4c89-bbcd-e05ae881bc90.gif" width="540">
+
+</details>
+
 ### Follower count
 The follower count is constructed from your social network's following lists. Iris gathers the data from relays and counts who is following you. There is no single "follower count" as in traditional centralised social media.
 
 The follower count may vary between clients and sessions for this reason. Some relays may be offline or not accessible and therefore the current follower count reflects this. It does not necessarily mean that someone has unfollowed you.
 
 ### Following list
-Nostr doesn't save individual follows as events, only the most recent version of your contact list. You'd have to save the "followed" event locally either manually or by your client. Keeping more than one nostr client session open (not logged out) is not advised since this may reset your following list.
+
+Your entire contact (following) list is updated every time you follow or unfollow someone. 
+
+Nostr doesn't save individual follows as events, only the most recent version of your contact list. Keeping more than one nostr client session open (not logged out) is not advised since this may reset your following list if an older or incomplete list is retrieved from the network by your latest active client.
+
+It's recommended to take frequent [backups](#backups-and-restore) of your profile (and following list). You cannot back up your follower list since that is counted by the client and is not stored anywhere (nostr protocol does not have a concept for a follower list).
 
 ### Image links
-You can post image URLs and the media is shown in the notes. 
+You can post image URLs (the url should end with .png .jpg .gif or a similar image file format) and the media is shown in the note. 
 
 ### Embedded media formats
 Youtube, IG, Spotify, Tidal and Twitch play on notes.
 
-Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM BS extension.
+Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM extension.
 
 ### Likes
-Click the number next to the heart in a note to see who liked it.
+Click the number next to the heart in a note to see who liked it. On a browser, you can also hover over the icon to see the name of the user.
+
+<details>
+  
+  <summary>Note reaction counts</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226320561-8d828a13-fcc1-4598-9758-1e5e23618d2f.gif" width="540">
+
+</details>
 
 ### New user / not logged in
 If a user's name is not found, a deterministic Adjective Animal name is shown instead of the public key (e.g. Grubby Magpie)
