@@ -127,7 +127,7 @@ Start experiencing the future of social media with Iris.
 ### Sign up, get a free NIP05 & Iris username in 40 seconds
 
 <details>
-  <summary>See the short video</summary>
+  <summary>Sign up in a few seconds</summary>
 
   https://user-images.githubusercontent.com/52623440/225862232-7ac9a16a-bf14-4745-ad48-3e3a67bc597e.mp4
 
@@ -136,10 +136,10 @@ Start experiencing the future of social media with Iris.
 There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
 
 ### Alby support
-Iris web client [works](https://iris.to/post/note1a9m6zcfjsrmulxxqkpe7wj8h580vh5yqrg3389dj5qcvduztlyjsavrv4y) with the [Alby](https://www.getalby.com) extension with multiple keys.
+[Alby](https://www.getalby.com) extension with multiple keys works on the Iris web version.
 
 ### Avatar
-Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgut84z5epwhnhh23d6sfkyjvm) on Iris.
+Gif avatars are supported on Iris.
 
 <details>
   <summary>Edit profile settings / Picture url</summary>
@@ -159,7 +159,7 @@ Gif avatars [work](https://iris.to/post/note1jq69869gcds9pqvgxchsmegju9gnn208zgu
 </details>
 
 ### Dark/light theme
-You can change the theme on settings. Iris will remember your selection even on other clients.
+You can change the theme on settings. Iris will remember your selection even on other Iris clients.
 
 <details>
   <summary>Settings / Appearance</summary>
@@ -527,20 +527,34 @@ Issue a Lightning invoice or you can also use `lightning:iristoapp@getalby.com`f
 You can zap by clicking the ⚡️ button. Your mobile wallet needs to be registered on the device for the link to be recognised when you click it.
 
 Lightning wallets are starting to implement the zapping feature. You could try
-www.walletofsatoshi.com for mobile or https://getalby.com for desktop, for example. The technical term is [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md).
+www.walletofsatoshi.com for mobile or https://getalby.com for desktop. The technical term is [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md) when checking for nostr zapping compatible Bitcoin lightning wallets.
 
-The ⚡️ is a lightning: link to the user's address ([see how it works](https://iris.to/post/note10uvvg0drlevur3y3cy6xgncwyg7ww28222yrkpfjy6kcc9w9d72qjnn5qp)).
+The ⚡️ symbol is a lightning: link to the user's Bitcoin address.
+
+<details>
+  
+  <summary>How to zap</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226428155-dda9786e-ee21-4c28-933a-6f197791898c.gif" width="540">
+
+</details>
 
 ## Privacy and security
 
 ### Key safety on browser apps
-Browser applications are not signed by the developer unlike native apps and browser extensions. Someone could hack the server or DNS and serve malicious code that steals your private key. XSS is also a risk, although not common in applications that use a framework like react.
+Browser applications are not signed by the developer unlike native apps and browser extensions. 
+
+Someone could hack the server or DNS and serve malicious code that steals your private key. XSS is also a risk, although not common in applications that use a framework like react.
+
+Nostr is still a young protocol and the key management features are not yet fully developed.
 
 ### Privacy on uploaded images
-Image loading is done via proxy to resize and avoid IP leaking unless it's from a whitelisted (e.g. imgur.com and nostr.build) service.
+Image loading on Iris is done via a proxy to resize and avoid IP leaking unless it's from a whitelisted (e.g. imgur.com and nostr.build) service.
 
 ### Private message privacy (DMs)
-Only the message content is encrypted: the sender, recipient and timestamp are visible to everyone.
+Only the message content is encrypted on Nostr: the sender, recipient and timestamp are visible to everyone. 
+
+Visit your profile with a [public key login](#log-in-with-the-public-key) or see soomeone else's profile with the [View as...](#view-as) feature to experience the level of privacy firsthand.
 
 ### Privacy on relays
 Your internet protocol (IP) address is exposed to the relays you connect to. If you want to improve your privacy, consider utilizing a service that masks your IP address (e.g. a VPN) from trackers online. You can also connect to Iris messenger on [Tor Browser]([url](https://www.torproject.org/)), which will mask your IP address. 
@@ -554,10 +568,10 @@ Iris caches profiles, follows and the latest notes for a faster and better user 
 
 ### Features disappeared or missing?
 
-If you force refresh on your browser that might help (cmd/ctrl +R in some browsers) or quitting the app may also help clear the local cache ([iOS](https://support.apple.com/en-us/HT201330)).
+See [try this first](#try-this-first).
 
 ### Keyword search
-Keyword search works with relays that have implemented it.
+Keyword search works with the relays that have implemented it.
 
 ### Local storage
 Iris stores a few of the latest messages, contacts and metadata for better user experience.
@@ -565,14 +579,30 @@ Iris stores a few of the latest messages, contacts and metadata for better user 
 ### NIP05 verification failed
 If your NIP05 is not showing on your profile, check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
 
-if your NIP05 shows as valid on one client, but invalid on the other it could be a local cache issue. Try cmd/cntr + R to do a force refresh on the browser, or quit and restart the app.
+if your NIP05 shows as valid on one client, but invalid on the other it could be a local cache issue. See [try this first](#try-this-first).
+
+<details>
+  
+  <summary>Valid NIP-05 identifier shows as green text on the user's profile</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226432233-5278c47f-fd56-4674-8df5-9882b0ce1884.png" width="540">
+
+</details>
 
 ### Relays
 The relays Iris uses can change over time since they reflect the content you're viewing.
 
 You can add, remove and disable (and enable with ☑) relays. By saving publicly the current relay list is published and you can use it on other clients.
 
-Iris account has usually between 8-13 active relays and runs smoothly. 
+The [Iris](https://iris.to/iris) account has usually between 8-13 active relays and runs smoothly. 
+
+<details>
+  
+  <summary>Settings / Network</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226434524-8feb3765-f0df-447d-a554-98db6e3a85a0.gif" width="540">
+
+</details>
 
 ### Relay requests
 Iris asks for 1000 latest events from known users initially. Some relays don't like the large authors filter (100-2000). Then it subscribes to all upcoming messages but discards those that are from unknown authors. When you open someone's profile, all their events are queried.
@@ -594,9 +624,9 @@ If you force refresh on your browser that might help (cmd/ctrl +R in some browse
 
 ### Posting does not seem to work
 
-It could be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs are open and whether you can read their content.
+It could be that you're not logged in with your private key, you're offline or not connected to the relays. A quick way to see whether you're logged in with your private key (nsec) is to see whether the DMs (direct messages) are open and whether you can read their content.
 
-If your relays are not allowing you to write to them new events you may have only read-only access (usually with paid relays). 
+If your relays are not allowing you to write to them new events you may have only a read-only access (usually with paid relays). 
 
 ### Video is not playing on note
 
@@ -622,12 +652,12 @@ Iris uploads the pictures to a third-party service (e.g. www.nostr.build ) so it
 
 ## Questions and support
 
-Please note that this FAQ section is a work-in-progress. The information may have already changed due to the frequent app and network updates.
+Please note that this FAQ section is a work-in-progress. The information may already have hanged due to the frequent app and network updates.
 
 If you cannot find the answer to your question, you can always reach out to other Iris and Nostr users for assistance.
 
 ### Iris developer
-[Martti Malmi](https://iris.to/npub1g53mukxnjkcmr94fhryzkqutdz2ukq4ks0gvy5af25rgmwsl4ngq43drvk) develops Iris full-time.
+[Martti Malmi](https://iris.to/sirius) develops Iris full-time.
 
 ### The name Iris
 Iris is the Greek goddess of the rainbow and the messenger of gods. Iris means rainbow in ancient Greek. The iris of the eye is named so because of its many colors. Eyes are essential for human communication. Iris users could be called [iridians](https://en.wiktionary.org/wiki/iridian).
