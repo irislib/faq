@@ -51,13 +51,13 @@ Start experiencing the future of social media with Iris.
   - [Image Links](#image-links)
   - [Embedded Media Formats](#embedded-media-formats)
   - [Likes](#likes)
-  - [New User / Not Logged In](#new-user--not-logged-in)
   - [Log in with the Public Key](#log-in-with-the-public-key)
   - [Markdown](#markdown)
   - [Notes](#notes)
   - [New Follower Notifications](#new-follower-notifications)
   - [Notifications](#notifications)
   - [Search Notes](#search-notes)
+  - [Unknown users](#unknown-users)  
   - [Upload Media](#upload-media)
   - [Report Notes and Users (Public)](#report-notes-and-users-public)
   - [Undo and Delete](#undo-and-delete)
@@ -362,6 +362,16 @@ It's recommended to take frequent [backups](#backups-and-restore) of your profil
 ### Image links
 You can post image URLs (the url should end with .png .jpg .gif or a similar image file format) and the media is shown in the note. 
 
+
+<details>
+  
+  <summary>Media urls on notes</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226323243-e8165685-f02c-43dd-988d-18b3f01985a1.gif" width="540">
+
+</details>
+
+
 ### Embedded media formats
 Youtube, IG, Spotify, Tidal and Twitch play on notes.
 
@@ -377,9 +387,6 @@ Click the number next to the heart in a note to see who liked it. On a browser, 
   <img src="https://user-images.githubusercontent.com/52623440/226320561-8d828a13-fcc1-4598-9758-1e5e23618d2f.gif" width="540">
 
 </details>
-
-### New user / not logged in
-If a user's name is not found, a deterministic Adjective Animal name is shown instead of the public key (e.g. Grubby Magpie)
 
 ### Log in with the public key
 If you use a public key to log in you have a read-only view of certain information but cannot add, edit or delete information.
@@ -416,6 +423,17 @@ Notes by the NoteID (starting with note1)
 There's also [support](https://iris.to/post/note1hr7ye9vud7g0jxe3mma0j75gamusrzwhtejth5erqm9v9h5u9j7q3lawa8) for Chinese, Japanese and Korean languages.
 Iris search is based on https://nostr.band with its content, results and features.
 
+### Unknown users
+If a user's name is not found, a deterministic Adjective Animal name is shown instead of the public key (e.g. Tall Marsupial).
+
+<details>
+  
+  <summary>Adjective Animal names on users</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226324367-b9c33391-760f-467c-82c8-bf1c7133a558.png" width="540">
+
+</details>
+
 ### Upload media
 Video and audio uploads are supported on notes.
 
@@ -424,12 +442,33 @@ You can use the attach media option when writing a note or upload to [imgur](htt
 Iris uploads to [nostr.build](https://www.nostr.build/) when using the attach media option and inserts the media link(s) after a successful upload.
 
 ### Report notes and users (public)
-You can publicly report users' posts. It publishes a delete event for the reported note in Nostr.
+You can publicly report users' posts. Reporting publishes a delete event for the reported note on Nostr. 
 
-The users you choose to report are blocked on your feed and the list of your reported users is public.
+The users you choose to report are [blocked](#block) on your feed. The list of your reported users is public.
+
+<details>
+  
+  <summary>Report users or notes</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226327814-37ac49d7-5cbe-4bed-ae15-b88bbfe6c069.gif" width="540">
+
+</details>
 
 ### Undo and delete
-In the note menu, there’s a delete option for notes. It’s up to relays and other clients to respect it so consider it more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works. Unboosting and unliking work the same way (not available yet).
+
+There’s a delete option for notes in the note menu.
+
+It’s up to relays and other clients to respect the delete requst. Consider the delete on Nostr more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works.
+
+Unboosting and unliking work the same way (not available yet).
+
+<details>
+  
+  <summary>Make a request to delete a note</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226329389-b436a9da-0448-4ff8-b89d-fb9b19a148af.gif" width="540">
+
+</details>
 
 ### View as
 
