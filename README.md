@@ -190,7 +190,9 @@ If you log in with a public key (npub) you cannot make any changes such as follo
 
 ### Log out or switch account
 
-You can log out or switch account. Notice that if you have not saved your private key (nsec) you cannot log in again and there is no way to restore your account access. Only you have access to the private key.
+You can end your current session by logging out or switching accounts. 
+
+❗️❗️❗️ If you have not saved your private key (nsec) you cannot log in again and there is no way to restore your account access. Only you have access to the private key. If you lose the private key the account is lost forever.
 
 <details>
   <summary>Log out</summary>
@@ -209,7 +211,7 @@ You can log out or switch account. Notice that if you have not saved your privat
 ### Android version
 Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
 
-Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason 🤙
+Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason.
 
 ### Username (nostr)
 Iris supports profile URLs in the following formats ([examples](https://iris.to/post/note1wn6axvzvnzn8hr45j95qlxpag4u7xcdx79rtk0uet8s5hhqynfhsdfppve)): 
@@ -362,7 +364,6 @@ It's recommended to take frequent [backups](#backups-and-restore) of your profil
 ### Image links
 You can post image URLs (the url should end with .png .jpg .gif or a similar image file format) and the media is shown in the note. 
 
-
 <details>
   
   <summary>Media urls on notes</summary>
@@ -371,9 +372,8 @@ You can post image URLs (the url should end with .png .jpg .gif or a similar ima
 
 </details>
 
-
 ### Embedded media formats
-Youtube, IG, Spotify, Tidal and Twitch play on notes.
+Youtube, IG, Spotify, Tidal and Twitch embeds play on notes.
 
 Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM extension.
 
@@ -392,35 +392,62 @@ Click the number next to the heart in a note to see who liked it. On a browser, 
 If you use a public key to log in you have a read-only view of certain information but cannot add, edit or delete information.
 
 ### Markdown
-This is not supported yet.
+Markdown is not supported yet.
 
 ### Notes
 There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
 
-For a [quote note](https://iris.to/post/note10ekxar0vvwnt6l098eemfypv3ty0ehtf47lfd8ljz9fv9tvz23psggdn00) (you can also have more than one), copy the NoteID (from the note menu) and paste it on the new note into the position where you want the quoted note.
+For a quote note (you can also have more than one in a note), copy the NoteID (from the note menu) and paste it on the new note into the position where you want the quoted note.
 
-Mentioning users When writing a note, type @ and wait for the menu to come out and choose the preferred user by clicking it from the menu.
+<details>
+  
+  <summary>Post a quoted note</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226400769-9915499e-afa5-4957-b265-50e9f4b94800.gif" width="540">
 
-Posting notes [works](https://iris.to/post/note1e8znafpc9sxgq447t6llsc0thp3eh80mh5zy6g6wqhygu8pf8ggq6maj9q) also by pressing cmd/ctrl + return on your keyboard.
+</details>
+
+For mentioning a user when writing a note, type @ and wait for the menu to come out and choose the preferred user by clicking it from the menu.
+
+<details>
+  
+  <summary>How to mention users in a note</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226403364-f82e240f-cd46-4301-bfa7-c047a977be64.png" width="540">
+
+</details>
+
+Posting notes works also by pressing cmd/ctrl + return on your keyboard.
 
 ### New follower notifications
 Iris shows notifications for new followers but doesn't save the notification. The notification is only shown when Iris has locally cached someone's contact list and gets a new version of it (updates were made elsewhere).
 
 ### Notifications
 
-Iris shows [notifications](https://iris.to/post/note1esk3s2mkjmtxmew83407ywxt68yg0dcel4vu9knv3u450p86akwsgf2dwk) in one place (the ❤️ on the menu).
+Iris shows notificationsin one place (the ❤️ on the menu).
+
+<details>
+  
+  <summary>Notifications view</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226406594-ae88f771-90d8-4efe-bb93-5ced97013a01.gif" width="540">
+
+</details>
 
 ### Search notes
 
-You can [search](https://iris.to/post/note1gd35qpaj2tke6ku8rjf4mtnjuafk4y5ghmrvspfse0s2a3stlrcqs5yn95) users by
-⚡️ npub
-⚡️ NIP05 (`jack@cash.app`)
-⚡️ @ (and start typing the name)
+You can search users by
+- npub
+- NIP05 (`jack@cash.app`)
+- @ (and start typing the name)
 
-Notes by the NoteID (starting with note1)
-⚡️ with hashtags and keywords
+Notes by 
+- the NoteID (starting with note1)
+- hashtags
+- keywords
 
-There's also [support](https://iris.to/post/note1hr7ye9vud7g0jxe3mma0j75gamusrzwhtejth5erqm9v9h5u9j7q3lawa8) for Chinese, Japanese and Korean languages.
+Search supports also Chinese, Japanese and Korean languages.
+
 Iris search is based on https://nostr.band with its content, results and features.
 
 ### Unknown users
@@ -473,6 +500,16 @@ Unboosting and unliking work the same way (not available yet).
 ### View as
 
 Iris allows you to view other accounts with their public key (a nostr protocol feature) if you're using a browser extension login. Visit the user's profile and open the user's profile menu and select the "[View as...](https://iris.to/post/note19nlkcm50kv4jfujhnprrgwa0m07s0wj7gqh663pu87sfgytgs6jqu32st4)" option.
+
+Use [log out or switch account](#log-out-or-switch-account) when you want to exit the "View as..." mode.
+
+<details>
+  
+  <summary>How to "view as..."</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226392896-e4b4ae66-c5e4-44f3-bd53-d7e720d9590a.gif" width="540">
+
+</details>
 
 ### Webtorrent magnet links
 Notes preview and play Magnet webtorrent media links (may not work on mobile devices).
