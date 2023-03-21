@@ -28,12 +28,9 @@ Start experiencing the future of social media with Iris.
   - [Dark/light theme](#darklight-theme)
   - [Login options](#login-options)
   - [Log out or switch account](#log-out-or-switch-account)  
-  - [Android version](#android-version)
   - [Username (nostr)](#username-nostr)
   - [Iris username](#iris-username)
-  - [Browser version](#browser-version)
-  - [iOS app (Apple)](#ios-app-apple)
-  - [Testflight](#testflight)
+  - [Versions](#versions)
 
 </details>
 
@@ -133,7 +130,7 @@ Start experiencing the future of social media with Iris.
 
 </details>
   
-There is a growing number of instructions how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
+There is a growing number of instructions on how to use Iris such as [nostr.how](https://www.nostr.how/clients/iris).
 
 ### Alby support
 [Alby](https://www.getalby.com) extension with multiple keys works on the Iris web version.
@@ -208,11 +205,6 @@ You can end your current session by logging out or switching accounts.
 
 </details>
 
-### Android version
-Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa). [(apk)](https://github.com/irislib/iris-messenger/releases)
-
-Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason.
-
 ### Username (nostr)
 Iris supports profile URLs in the following formats ([examples](https://iris.to/post/note1wn6axvzvnzn8hr45j95qlxpag4u7xcdx79rtk0uet8s5hhqynfhsdfppve)): 
  - `https://iris.to/bob` (bob is an `iris.to/username`)
@@ -248,27 +240,38 @@ You cannot change your Iris username. They are unique, more than 3 characters lo
 
 Namesquatting, impersonation, vulgar or otherwise offensive usernames may result in you losing your username (also spamming or otherwise abusive username usage).
 
-### Browser version
+### Versions
+
+#### Android version
+Google Play store [version](https://play.google.com/store/apps/details?id=to.iris.twa) and [apk](https://github.com/irislib/iris-messenger/releases).
+
+Iris updates the version automatically. No need to install a new version. Just quit the app and restart if you want to expedite the updating or it does not do it for some reason.
+
+#### Browser version
 
 The web version of Iris works on most common browsers: [iris.to](https://iris.to/).
 
 Notice that some of the features may not be available or need to be enabled or configured for them to work (for example, some media files may not play on Chrome and Chromium-based browsers such as Brave).
 
-### iOS app (Apple)
+#### iOS app (Apple)
 Get Iris from [App store](https://apps.apple.com/app/iris-the-nostr-client/id1665849007).
 
 Iris updates the version automatically. No need to install a new version. Just [quit the app and reopen](https://support.apple.com/en-gb/guide/iphone/iph83bfec492/ios) it if you want to expedite the updating or if it does not do it for some reason.
 
-### Testflight
+#### Testflight
 
-Iris is in Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
+Iris is on Testflight public testing. Join [here](https://testflight.apple.com/join/5xdoDCmG).
 
 Iris updates the version automatically. No need to install a new version. Just [quit the app and reopen](https://support.apple.com/en-gb/guide/iphone/iph83bfec492/ios) it if you want to expedite the updating or if it does not do it for some reason.
+
+#### Desktop (Windows, MacOS, Linux), Docker and other versions
+
+Visit the [instructions](https://github.com/irislib/iris-messenger) for [downloads](https://github.com/irislib/iris-messenger/releases) and details.
 
 ## Using Iris
 
 ### Audio player
-Notes can play audio such as mp3-files if your OS or browser support it.
+Notes can play audio such as mp3-files if your OS or browser supports it.
 
 ### Backups and Restore
 
@@ -424,7 +427,7 @@ Iris shows notifications for new followers but doesn't save the notification. Th
 
 ### Notifications
 
-Iris shows notificationsin one place (the ❤️ on the menu).
+Iris shows notifications in one place (the ❤️ on the menu).
 
 <details>
   
@@ -485,7 +488,7 @@ The users you choose to report are [blocked](#block) on your feed. The list of y
 
 There’s a delete option for notes in the note menu.
 
-It’s up to relays and other clients to respect the delete requst. Consider the delete on Nostr more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works.
+It’s up to relays and other clients to respect the delete request. Consider the delete on Nostr more as a wish than anything else. Hidden or ignored is not deleted. This is how nostr protocol works.
 
 Unboosting and unliking work the same way (not available yet).
 
@@ -554,7 +557,7 @@ Image loading on Iris is done via a proxy to resize and avoid IP leaking unless 
 ### Private message privacy (DMs)
 Only the message content is encrypted on Nostr: the sender, recipient and timestamp are visible to everyone. 
 
-Visit your profile with a [public key login](#log-in-with-the-public-key) or see soomeone else's profile with the [View as...](#view-as) feature to experience the level of privacy firsthand.
+Visit your profile with a [public key login](#log-in-with-the-public-key) or see someone else's profile with the [View as...](#view-as) feature to experience the level of privacy firsthand.
 
 ### Privacy on relays
 Your internet protocol (IP) address is exposed to the relays you connect to. If you want to improve your privacy, consider utilizing a service that masks your IP address (e.g. a VPN) from trackers online. You can also connect to Iris messenger on [Tor Browser]([url](https://www.torproject.org/)), which will mask your IP address. 
@@ -574,7 +577,7 @@ See [try this first](#try-this-first).
 Keyword search works with the relays that have implemented it.
 
 ### Local storage
-Iris stores a few of the latest messages, contacts and metadata for better user experience.
+Iris stores a few of the latest messages, contacts and metadata for a better user experience.
 
 ### NIP05 verification failed
 If your NIP05 is not showing on your profile, check whether you have technical errors in the NIP05 implementation (e.g. CORS error).
@@ -652,7 +655,7 @@ Iris uploads the pictures to a third-party service (e.g. www.nostr.build ) so it
 
 ## Questions and support
 
-Please note that this FAQ section is a work-in-progress. The information may already have hanged due to the frequent app and network updates.
+Please note that this FAQ section is a work-in-progress. The information may already have changed due to the frequent app and network updates.
 
 If you cannot find the answer to your question, you can always reach out to other Iris and Nostr users for assistance.
 
