@@ -623,7 +623,17 @@ The NIP-05 identifier is an easier way to find your public key profile. Just lik
 
 ### Try this first
 
-If you force refresh on your browser that might help (cmd/ctrl +R in some browsers) or quitting the app may also help clear the local cache ([iOS](https://support.apple.com/en-us/HT201330) instructions).
+#### Browser
+
+- force refresh on your browser (cmd/ctrl + R in some browsers)
+- delete the [local Iris site data](https://support.brave.com/hc/en-us/articles/360048833872-How-Do-I-Clear-Cookies-And-Site-Data-In-Brave-#4)
+- log out and in again
+
+#### Mobile (Android, Apple)
+
+- quit the app ([iOS](https://support.apple.com/en-us/HT201330); [Android](https://support.google.com/android/answer/9079646?hl=en#zippy=%2Cclose-apps))
+- log out and in again (or switch accounts)
+- (delete and install the app again)
 
 ### Posting does not seem to work
 
