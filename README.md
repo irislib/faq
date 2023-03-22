@@ -45,16 +45,16 @@ Start experiencing the future of social media with Iris.
   - [Feed](#feed)
   - [Follower Count](#follower-count)
   - [Following List](#following-list)
-  - [Image Links](#image-links)
   - [Embedded Media Formats](#embedded-media-formats)
   - [Likes](#likes)
   - [Log in with the Public Key](#log-in-with-the-public-key)
   - [Markdown](#markdown)
+  - [Media Links](#media-links)  
   - [Notes](#notes)
   - [New Follower Notifications](#new-follower-notifications)
   - [Notifications](#notifications)
   - [Search Notes](#search-notes)
-  - [Unknown users](#unknown-users)  
+  - [Unknown Users](#unknown-users)  
   - [Upload Media](#upload-media)
   - [Report Notes and Users (Public)](#report-notes-and-users-public)
   - [Undo and Delete](#undo-and-delete)
@@ -364,17 +364,6 @@ Nostr doesn't save individual follows as events, only the most recent version of
 
 It's recommended to take frequent [backups](#backups-and-restore) of your profile (and following list). You cannot back up your follower list since that is counted by the client and is not stored anywhere (nostr protocol does not have a concept for a follower list).
 
-### Image links
-You can post image URLs (the url should end with .png .jpg .gif or a similar image file format) and the media is shown in the note. 
-
-<details>
-  
-  <summary>Media urls on notes</summary>
-  
-  <img src="https://user-images.githubusercontent.com/52623440/226323243-e8165685-f02c-43dd-988d-18b3f01985a1.gif" width="540">
-
-</details>
-
 ### Embedded media formats
 Youtube, IG, Spotify, Tidal and Twitch embeds play on notes.
 
@@ -396,6 +385,17 @@ If you use a public key to log in you have a read-only view of certain informati
 
 ### Markdown
 Markdown is not supported yet.
+
+### Media links
+You can post media URLs (the url should end with .png .jpg .gif .mp3 mp4 or a similar media file format) and the media is shown in the note. 
+
+<details>
+  
+  <summary>Media urls on notes</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/226323243-e8165685-f02c-43dd-988d-18b3f01985a1.gif" width="540">
+
+</details>
 
 ### Notes
 There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
