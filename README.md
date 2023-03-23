@@ -42,10 +42,12 @@ Start experiencing the future of social media with Iris.
   - [Block](#block)
   - [Color badges on user names](#color-badges-on-usernames)
   - [Delete Account](#delete-account)
+  - [Embedded Media Formats](#embedded-media-formats)  
   - [Feed](#feed)
+  - [Follow and Unfollow](#follow-and-unfollow)  
   - [Follower Count](#follower-count)
   - [Following List](#following-list)
-  - [Embedded Media Formats](#embedded-media-formats)
+  - [Languages and Translations](#languages-and-translations)  
   - [Likes](#likes)
   - [Log in with the Public Key](#log-in-with-the-public-key)
   - [Markdown](#markdown)
@@ -335,6 +337,9 @@ Delete account feature on Account settings resets your profile and following, an
 
 The delete account option is only available on some versions (e.g. Play and App store).
 
+### Embedded media formats
+Youtube, IG, Spotify, Tidal and Twitch embeds play on notes.
+
 ### Feed
 
 Following feed shows only the people you directly follow.
@@ -354,6 +359,34 @@ The Social network -settings are stored locally only. If you have multiple clien
 
 </details>
 
+### Follow and unfollow
+
+You can follow and unfollow users from their profile view menu, from each note's menu or by visiting following/follower lists.
+
+<details>
+  
+  <summary>Follow / unfollow from the user profile </summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227211728-1424c678-b7d0-4f88-bbe1-4a799881da0d.gif" width="540">
+
+</details>
+
+<details>
+  
+  <summary>Follow / unfollow from a note </summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227211935-d5808429-6b7d-40a5-a94b-6f98f4024acc.gif" width="540">
+
+</details>
+
+<details>
+
+  <summary>Follow all</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227206932-b963704c-7f58-46f8-93fe-d8799931e60b.gif" width="540">
+
+</details>
+
 ### Follower count
 The follower count is constructed from your social network's following lists. Iris gathers the data from relays and counts who is following you. There is no single "follower count" as in traditional centralised social media.
 
@@ -367,10 +400,31 @@ Nostr doesn't save individual follows as events, only the most recent version of
 
 It's recommended to take frequent [backups](#backups-and-restore) of your profile (and following list). You cannot back up your follower list since that is counted by the client and is not stored anywhere (nostr protocol does not have a concept for a follower list).
 
-### Embedded media formats
-Youtube, IG, Spotify, Tidal and Twitch embeds play on notes.
 
 Brave browser issue: Spotify embed may cause Brave to ask to install a Widevine DRM extension.
+
+### Languages and translations
+
+You can use Iris on many languages. If your native language is not available or you would like to contribute to translations all help is [appreciated](#language-options).
+
+Each note has a Translate option on its menu. Some languages may not be available and the service is an open-source voluntary solution so the translation quality and availability may vary.
+
+<details>
+  
+  <summary>Settings / Language </summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227202352-018d2ea3-4101-48f3-a52a-ac29e325efe2.png" width="540">
+
+</details>
+
+
+<details>
+  
+  <summary>Translate a note </summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227204763-b6a40121-9eb3-4cd1-a2a6-089d5d8d6878.gif" width="540">
+
+</details>
 
 ### Likes
 Click the number next to the heart in a note to see who liked it. On a browser, you can also hover over the icon to see the name of the user.
