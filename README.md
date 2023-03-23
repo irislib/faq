@@ -50,6 +50,7 @@ Start experiencing the future of social media with Iris.
   - [Log in with the Public Key](#log-in-with-the-public-key)
   - [Markdown](#markdown)
   - [Media Links](#media-links)  
+  - [Mute](#mute)    
   - [Notes](#notes)
   - [New Follower Notifications](#new-follower-notifications)
   - [Notifications](#notifications)
@@ -307,6 +308,8 @@ User blocks are private (they are encrypted and stored as a nostr event kind 164
 
 When you block someone on Iris, DMs will be locally removed as well, and any further DMs are rejected. If you followed the user before blocking the block also unfollows the user. If you want to unblock you need to follow the user again. Unblocking does not restore the previous follow status.
 
+You can [mute](#mute) a note (and its thread) if you don't want to block the user.
+
 <details>
   <summary>Block/unblock user from profile</summary>
   
@@ -397,6 +400,20 @@ You can post media URLs (the url should end with .png .jpg .gif .mp3 mp4 or a si
 
 </details>
 
+### Mute
+
+Notes can be muted without [blocking](#block) the user. This is helpful if there are note threads with lots of replies and notifications.
+
+Each note has a menu where you can find the Mute option.
+
+<details>
+  
+  <summary>Mute a note (thread)</summary>
+  
+  <img src="https://user-images.githubusercontent.com/52623440/227197343-8e90fccb-8934-47e1-ae74-732979414500.gif" width="540">
+
+</details>
+
 ### Notes
 There're no restrictions on who sees your posted notes. All notes are public. Clients can change what the user views (see the feed and spam section) but it does not change the fact that nostr handles all notes as public for now (unless they are DM content), and you should consider everything as public. 
 
@@ -428,6 +445,8 @@ Iris shows notifications for new followers but doesn't save the notification. Th
 ### Notifications
 
 Iris shows notifications in one place (the ❤️ on the menu).
+
+Notifications from a note that has more than 10 people mentioned are not shown.
 
 <details>
   
