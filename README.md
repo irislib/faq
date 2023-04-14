@@ -524,6 +524,13 @@ Notes by
 
 Search supports also Chinese, Japanese and Korean languages.
 
+<details>
+  <summary>Search with emojis</summary>
+
+  <img src="https://user-images.githubusercontent.com/52623440/232125975-1f87cfc4-cf14-4ad7-9649-018a68cbb102.gif" width="540" />
+
+</details>
+
 Iris search is based on https://nostr.band with its content, results and features.
 
 ### Unknown users
